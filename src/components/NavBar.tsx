@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <HStack justifyContent="space-between" padding="10px">
       <Image src={logo} boxSize="60px"></Image>
-      <Text>Fiber@Home Network Topology</Text>
+      <Text>Game Station 89</Text>
       <ColorModeSwitch></ColorModeSwitch>
     </HStack>
   );
