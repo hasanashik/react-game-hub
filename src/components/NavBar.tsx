@@ -10,7 +10,8 @@ interface Props {
 function NavBar({ onSearch }: Props) {
   return (
     <>
-      <HStack justifyContent="space-between" padding="15px">
+      {/* justifyContent="space-between" */}
+      <HStack spacing={8} padding="15px">
         <Image
           src={logo}
           boxSize="20px"
@@ -21,7 +22,8 @@ function NavBar({ onSearch }: Props) {
 
         {/* <Text whiteSpace={"nowrap"}>HUZA's Game Station</Text> */}
         <SearchInput onSearch={onSearch}></SearchInput>
-
+        <Text whiteSpace={"nowrap"}>HASAN-UZ-ZAMAN ASHIK</Text>
+        <Text whiteSpace={"nowrap"}>Inspired from RAWG.IO</Text>
         <ColorModeSwitch></ColorModeSwitch>
       </HStack>
     </>
