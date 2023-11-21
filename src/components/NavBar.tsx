@@ -3,14 +3,22 @@ import logo from "../assets/logo.webp";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
-function NavBar() {
+interface Props {
+  onSearch: (searchText: string) => void;
+}
+
+function NavBar({ onSearch }: Props) {
   return (
-    <HStack justifyContent="space-between" padding="15px">
-      <Image src={logo} boxSize="60px"></Image>
-      <SearchInput></SearchInput>
-      <Text>Game Station 89</Text>
-      <ColorModeSwitch></ColorModeSwitch>
-    </HStack>
+    <>
+      <HStack justifyContent="space-between" padding="15px">
+        <Image src={logo} boxSize="60px"></Image>
+
+        <Text whiteSpace={"nowrap"}>HUZA's Game Station</Text>
+        <SearchInput onSearch={onSearch}></SearchInput>
+
+        <ColorModeSwitch></ColorModeSwitch>
+      </HStack>
+    </>
   );
 }
 
