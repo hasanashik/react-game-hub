@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 192.168.41.58 --port 8886",
+    "dev": "vite --host 127.0.0.1 --port 8886",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
