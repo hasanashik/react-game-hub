@@ -3,11 +3,7 @@ import logo from "../assets/HUZAsGameStation.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
-interface Props {
-  onSearch: (searchText: string) => void;
-}
-
-function NavBar({ onSearch }: Props) {
+function NavBar() {
   return (
     <>
       {/* justifyContent="space-between" */}
@@ -21,7 +17,7 @@ function NavBar({ onSearch }: Props) {
         ></Image>
 
         {/* <Text whiteSpace={"nowrap"}>HUZA's Game Station</Text> */}
-        <SearchInput onSearch={onSearch}></SearchInput>
+        <SearchInput></SearchInput>
         <Text whiteSpace={"nowrap"}>HASAN-UZ-ZAMAN ASHIK</Text>
         <Text whiteSpace={"nowrap"}>Inspired from RAWG.IO</Text>
         <ColorModeSwitch></ColorModeSwitch>
