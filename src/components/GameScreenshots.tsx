@@ -10,7 +10,7 @@ const GameScreenshots = ({ gameId }: Props) => {
   const first = data?.results[0];
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={1}>
       {data?.results.map((file) => (
         <Image key={file.id} src={file.image}></Image>
       ))}
